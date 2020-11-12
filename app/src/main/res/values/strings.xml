@@ -21,4 +21,9 @@
     <string name="divide">Divide</string>
     <string name="input_text">Input text</string>
     <string name="enter_char">Enter char</string>
+    <string name="divisor_error">"Cannot divide by 0!"</string>
+    <string name="input_operator">Input operator</string>
+    <string name="calculate">Calculate</string>
+    <string name="invalid_operator">Unknown operator: %1$s</string>
+    <string name="show_subject_name">Show subject name</string>
 </resources>
