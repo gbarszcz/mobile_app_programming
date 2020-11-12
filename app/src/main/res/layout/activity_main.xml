@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -19,18 +20,18 @@
 
             <TextView
                 android:id="@+id/textViewName"
-                android:layout_weight="2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name" />
+                android:layout_weight="2"
+                android:text="@string/name" />
 
             <EditText
                 android:id="@+id/editTextName"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:inputType="textPersonName"
-                android:text="Input name" />
+                android:text="@string/input_name" />
         </LinearLayout>
 
         <LinearLayout
@@ -40,18 +41,18 @@
 
             <TextView
                 android:id="@+id/textViewSurname"
-                android:layout_weight="2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Surname" />
+                android:layout_weight="2"
+                android:text="@string/surname" />
 
             <EditText
                 android:id="@+id/editTextSurname"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:inputType="textPersonName"
-                android:text="Input surname" />
+                android:text="@string/input_surname" />
         </LinearLayout>
 
         <LinearLayout
@@ -61,18 +62,18 @@
 
             <TextView
                 android:id="@+id/textViewSubject"
-                android:layout_weight="2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Subject" />
+                android:layout_weight="2"
+                android:text="@string/subject" />
 
             <EditText
                 android:id="@+id/editTextSubject"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:inputType="text"
-                android:text="Input subject" />
+                android:text="@string/input_subject" />
         </LinearLayout>
 
         <LinearLayout
@@ -82,18 +83,18 @@
 
             <TextView
                 android:id="@+id/textViewAverageGrade"
-                android:layout_weight="2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Average grade" />
+                android:layout_weight="2"
+                android:text="@string/average_grade" />
 
             <EditText
                 android:id="@+id/editTextAverageGrade"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:inputType="numberSigned|numberDecimal"
-                android:text="Input average grade" />
+                android:text="@string/input_average_grade" />
         </LinearLayout>
 
         <LinearLayout
@@ -103,34 +104,37 @@
 
             <TextView
                 android:id="@+id/textViewResult"
-                android:layout_weight="2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Result" />
+                android:layout_weight="2"
+                android:text="@string/result" />
 
             <TextView
                 android:id="@+id/textViewNone"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="none" />
+                android:layout_weight="1"
+                android:text="@string/none" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="226dp">
+
+            <Button
+                android:id="@+id/buttonCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="print"
+                android:text="Check"
+                android:textAllCaps="true" />
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="226dp">
-
-        <Button
-            android:id="@+id/buttonCheck"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Check"
-            android:textAllCaps="true" />
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
