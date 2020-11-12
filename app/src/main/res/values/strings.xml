@@ -11,4 +11,14 @@
     <string name="result">Result</string>
     <string name="none">none</string>
     <string name="scholarship">Student %1$s %2$s z kierunku %3$s %4$sotrzymał stypendium.</string>
+    <string name="first_number">First number</string>
+    <string name="input_first_number">Input first number</string>
+    <string name="second_number">Second number</string>
+    <string name="input_second_number">Input second number</string>
+    <string name="add">Add</string>
+    <string name="subtract">Subtract</string>
+    <string name="multiply">Multiply</string>
+    <string name="divide">Divide</string>
+    <string name="input_text">Input text</string>
+    <string name="enter_char">Enter char</string>
 </resources>

@@ -19,19 +19,19 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewName"
+                android:id="@+id/textViewFirstNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="@string/name" />
+                android:text="@string/first_number" />
 
             <EditText
-                android:id="@+id/editTextName"
+                android:id="@+id/editTextFirstNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:inputType="textPersonName"
-                android:text="@string/input_name" />
+                android:inputType="number"
+                android:text="@string/input_first_number" />
         </LinearLayout>
 
         <LinearLayout
@@ -40,99 +40,106 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewSurname"
+                android:id="@+id/textViewSecondNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="@string/surname" />
+                android:text="@string/second_number" />
 
             <EditText
-                android:id="@+id/editTextSurname"
+                android:id="@+id/editTextSecondNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:inputType="textPersonName"
-                android:text="@string/input_surname" />
+                android:inputType="number"
+                android:text="@string/input_second_number" />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textViewSubject"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="@string/subject" />
-
-            <EditText
-                android:id="@+id/editTextSubject"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:inputType="text"
-                android:text="@string/input_subject" />
+                android:onClick="calculate"
+                android:text="@string/add" />
+
+            <Button
+                android:id="@+id/subtract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="calculate"
+                android:text="@string/subtract" />
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="calculate"
+                android:text="@string/multiply" />
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="calculate"
+                android:text="@string/divide" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewAverageGrade"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="@string/average_grade" />
-
-            <EditText
-                android:id="@+id/editTextAverageGrade"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="numberSigned|numberDecimal"
-                android:text="@string/input_average_grade" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textViewResult"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="@string/result" />
-
-            <TextView
-                android:id="@+id/textViewNone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/none" />
-
+                android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="226dp">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/buttonCheck"
+            <EditText
+                android:id="@+id/editTextInputText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="print"
-                android:text="Check"
-                android:textAllCaps="true" />
+                android:layout_weight="1"
+                android:hint="@string/input_text"
+                android:inputType="number" />
 
+            <EditText
+                android:id="@+id/editTextOneChar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/enter_char"
+                android:inputType="number"
+                android:maxLength="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewCharCounter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
         </LinearLayout>
 
     </LinearLayout>
