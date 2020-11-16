@@ -1,7 +1,6 @@
-package com.example.pam_gr1;
+package com.example.pam_gr1.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
@@ -10,14 +9,24 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.pam_gr1.Calculator;
+import com.example.pam_gr1.R;
+
+public class CalculatorActivity extends AppCompatActivity {
     EditText divisor;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calculator);
 
+        initButtons();
+    }
+
+    private void initButtons() {
         Button addButton = findViewById(R.id.addButton);
         addButton.setOnClickListener(addButtonOnClickListener);
         Button subtractButton = findViewById(R.id.subtractButton);
@@ -60,11 +69,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             default:
                 result = getString(R.string.invalid_operator, operator);
-                Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
+                Toast.makeText(CalculatorActivity.this, result, Toast.LENGTH_SHORT).show();
         }
 
-        TextView textViewResult = findViewById(R.id.textViewRslt);
-        textViewResult.setText(result);
+        Intent intent = new Intent(this, CalculatorResultActivity.class);
+        intent.putExtra("result", result);
+        startActivity(intent);
     }
 
     private View.OnClickListener addButtonOnClickListener = v -> calculate("+");
@@ -81,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
     };
 
     private View.OnLongClickListener showSubjectNameButtonOnClickListener = v -> {
-        Toast.makeText(MainActivity.this, getString(R.string.show_subject_name), Toast.LENGTH_SHORT).show();
+        Toast.makeText(CalculatorActivity.this, getString(R.string.show_subject_name), Toast.LENGTH_SHORT).show();
         return true;
     };
 
@@ -90,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         public void onFocusChange(View v, boolean hasFocus) {
             Editable divisorText = divisor.getText();
             if (divisorText != null && divisorText.toString().equals("0")) {
-                Toast.makeText(MainActivity.this, getString(R.string.divisor_error), Toast.LENGTH_SHORT).show();
+                Toast.makeText(CalculatorActivity.this, getString(R.string.divisor_error), Toast.LENGTH_SHORT).show();
             }
         }
     };
