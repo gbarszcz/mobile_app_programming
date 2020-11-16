@@ -20,7 +20,7 @@
                 android:id="@+id/textViewFirstName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/first_name" />
+                android:hint="@string/name" />
 
         </LinearLayout>
         <LinearLayout
@@ -32,7 +32,7 @@
                 android:id="@+id/textViewLastName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/last_name" />
+                android:hint="@string/surname" />
 
         </LinearLayout>
         <LinearLayout
