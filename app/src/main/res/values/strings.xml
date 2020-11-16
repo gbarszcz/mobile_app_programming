@@ -26,4 +26,14 @@
     <string name="calculate">Calculate</string>
     <string name="invalid_operator">Unknown operator: %1$s</string>
     <string name="show_subject_name">Show subject name</string>
+    <string name="credits_title">Credits</string>
+    <string name="calculator_title">Calculator</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="class_group">Class</string>
+    <string name="input_first_name">Input first name</string>
+    <string name="input_class_group">Input class group</string>
+    <string name="save_credits">Save credits</string>
+    <string name="edit_credits">Edit credits</string>
+    <string name="input_last_name">Input last name</string>
 </resources>
