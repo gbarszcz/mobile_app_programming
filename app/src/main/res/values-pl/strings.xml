@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PAM_GR1</string>
+    <string name="name">Imię</string>
+    <string name="input_name">Wstaw imię</string>
+    <string name="surname">Nazwisko</string>
+    <string name="input_surname">Wstaw nazwisko</string>
+    <string name="subject">Przedmiot</string>
+    <string name="input_subject">Wstaw przedmiot</string>
+    <string name="average_grade">Średnia ocen</string>
+    <string name="input_average_grade">Wstaw średnią ocen</string>
+    <string name="result">Wynik</string>
+    <string name="none">none</string>
+    <string name="scholarship">Student %1$s %2$s z kierunku %3$s %4$s otrzymał stypendium.</string>
+    <string name="first_number">Pierwszy numer</string>
+    <string name="input_first_number">Wstaw pierwszy numer</string>
+    <string name="second_number">Drugi numer</string>
+    <string name="input_second_number">Wstaw drugi numer</string>
+    <string name="add">Dodawanie</string>
+    <string name="subtract">Odejmowanie</string>
+    <string name="multiply">Mnożenie</string>
+    <string name="divide">Dzielenie</string>
+    <string name="input_text">Wstaw tekst</string>
+    <string name="enter_char">Wstaw znak</string>
+    <string name="divisor_error">Nie można dzielić przez 0!</string>
+    <string name="input_operator">Wstaw operator</string>
+    <string name="calculate">Oblicz</string>
+    <string name="invalid_operator">Nieznany operator: %1$s</string>
+    <string name="show_subject_name">Pokaż nazwę przedmiotu</string>
+    <string name="credits_title">O autorze</string>
+    <string name="calculator_title">Kalkulator</string>
+    <string name="class_group">Rocznik</string>
+    <string name="input_class_group">Wstaw rocznik</string>
+    <string name="save_credits">Zapisz "O autorze"</string>
+    <string name="edit_credits">Edytuj "O autorze"</string>
+</resources>
